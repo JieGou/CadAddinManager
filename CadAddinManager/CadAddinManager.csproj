@@ -130,7 +130,7 @@
 <!--  <PropertyGroup>-->
 <!--    <PostBuildEvent>powershell -NoProfile -ExecutionPolicy Unrestricted $(SolutionDir)CadAddinManager\postbuild.ps1 -Configuration '$(Configuration)' -SolutionDir '$(SolutionDir)' -ProjectDir '$(ProjectDir)'</PostBuildEvent>-->
 <!--  </PropertyGroup>-->
-  <Target Name="CopyFiles" AfterTargets="CoreBuild" Condition="$(Configuration.Contains('Debug'))" >
+  <Target Name="CopyFiles" AfterTargets="CoreBuild" Condition="$(Configuration.Contains('Debug'))">
     <ItemGroup>
       <XmlItem Include="$(ProjectDir)*.xml" />
       <AddinItem Include="$(TargetDir)*.*" />

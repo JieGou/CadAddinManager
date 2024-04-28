@@ -49,6 +49,8 @@ public class App : ICadCommand
         rps.Title = "Addin Manager";
         RibbonPanel rp = new RibbonPanel();
         rp.Source = rps;
+        //<image url="$(ProjectDir)\DocumentImages\DialogLauncher.png"/>
+        //设置 DialogLauncher 可参考 https://adndevblog.typepad.com/autocad/2012/05/the-arrow-of-the-dialog-launcher-button-on-my-ribbon-panel-does-not-show.html
         RibbonButton rci = new RibbonButton();
         rci.Name = "Addin Manager";
         rps.DialogLauncher = rci;
